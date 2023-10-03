@@ -1,0 +1,49 @@
+.tabWrapper {
+    width: 650px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.tabHeader {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+.tabItem {
+    position: relative;
+
+    a {
+        padding: 5px 10px;
+        display: block;
+        color: #fff;
+    }
+
+    &.selected {
+        a {
+            color: #535bf2;
+        }
+    }
+}
+
+.indicator {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #535bf2;
+}
+
+.tabContent {
+    flex: 1;
+    padding: 10px;
+    color: #fff;
+    height: 100%;
+    background-color: #212121;
+    overflow: auto;
+}
